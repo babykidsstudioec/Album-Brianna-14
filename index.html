@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6e9e2" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="description" content="Un álbum de recuerdos desde el nacimiento hasta los 14 años de Brianna. Una historia de amor que pasa página a página." />
+  <meta property="og:title" content="14 Years of You — Brianna" />
+  <meta property="og:description" content="Un recuerdo especial: 14 años de sonrisas, sueños y amor." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://babykidsstudioec.github.io/Album-Brianna-14/assets/portada-whatsapp.jpg" />
+  <meta property="og:image:secure_url" content="https://babykidsstudioec.github.io/Album-Brianna-14/assets/portada-whatsapp.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Álbum fotográfico de Brianna: 14 años de recuerdos" />
+  <meta property="og:url" content="https://babykidsstudioec.github.io/Album-Brianna-14/" />
+  <meta property="og:site_name" content="Momentos Digitales SP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brianna · 14 Years of You" />
+  <meta name="twitter:description" content="Un álbum 3D de recuerdos desde el nacimiento hasta los 14 años." />
+  <meta name="twitter:image" content="https://babykidsstudioec.github.io/Album-Brianna-14/assets/portada-whatsapp.jpg" />
+  <link rel="canonical" href="https://babykidsstudioec.github.io/Album-Brianna-14/" />
+  <title>Brianna · 14 Years of You · Álbum 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261113-brianna-github1" />
+  <script src="config.js?v=20261113-brianna-github1" defer></script>
+  <script src="app.js?v=20261113-brianna-github1" defer></script>
+</head>
+<body>
+  <div class="page-ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <section class="intro" id="intro" aria-label="Portada de bienvenida al álbum">
+    <div class="intro__frame">
+      <div class="intro__ribbon intro__ribbon--left" aria-hidden="true">✧</div>
+      <div class="intro__ribbon intro__ribbon--right" aria-hidden="true">✧</div>
+      <div class="intro__content">
+        <div class="intro__eyebrow"><span>✧</span> UN LIBRO DE RECUERDOS <span>✧</span></div>
+        <span class="intro__line"></span>
+        <h1><span id="heroTitle">14 YEARS OF YOU</span><em id="heroName">Brianna</em></h1>
+        <p class="intro__description" id="heroSubtitle">De nuestra pequeña niña a la hermosa jovencita que eres hoy.</p>
+        <div class="intro__divider" aria-hidden="true"><span></span>♡<span></span></div>
+        <p class="intro__years">DE 0 A 14 AÑOS · UNA HISTORIA DE AMOR</p>
+        <button type="button" class="main-button" id="startBtn"><span>Abrir mi álbum</span><span class="main-button__arrow">↗</span></button>
+        <p class="intro__hint">Con música suave y páginas que cobran vida ✨</p>
+      </div>
+      <div class="intro__portrait-wrap">
+        <span class="intro__flower intro__flower--top" aria-hidden="true">✿</span>
+        <div class="intro__portrait">
+          <img src="assets/photos/edad-14.webp" alt="Brianna a los 14 años" fetchpriority="high" />
+          <span class="intro__portrait-caption">14 años de recuerdos</span>
+        </div>
+        <span class="intro__flower intro__flower--bottom" aria-hidden="true">✿</span>
+      </div>
+    </div>
+    <p class="intro__footer">HECHO CON AMOR · PARA BRIANNA</p>
+  </section>
+
+  <main class="experience" id="experience">
+    <header class="experience__header">
+      <span class="experience__overline">UN VIAJE POR TUS RECUERDOS</span>
+      <h2><span>La historia de</span> <em id="headerName">Brianna</em></h2>
+      <div class="heading-ornament" aria-hidden="true">✦ ── ♡ ── ✦</div>
+    </header>
+
+    <div class="scene">
+      <div class="book-stage" id="bookStage">
+        <div class="book" id="book" role="region" aria-label="Álbum interactivo 3D de Brianna: haz clic en el lado derecho para avanzar o izquierdo para retroceder">
+          <div class="book__base book__base--left" aria-hidden="true"><div class="book__base-decoration">B <span>♡</span></div></div>
+          <div class="book__base book__base--right" aria-hidden="true"><div class="book__base-decoration">14 <span>♡</span></div></div>
+          <div class="book__spine" aria-hidden="true"></div>
+          <div id="sheets" class="book__sheets"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reader-info" aria-live="polite">
+      <div class="reader-info__heading" id="spreadLabel">Nuestros primeros recuerdos</div>
+      <div class="reader-info__progress" id="spreadProgress">01 / 08</div>
+    </div>
+
+    <nav class="controls" aria-label="Controles del álbum">
+      <button id="prevBtn" class="control control--turn" type="button" aria-label="Pasar a la página anterior"><span class="control__icon">‹</span><span>Anterior</span></button>
+      <button id="musicBtn" class="control control--secondary" type="button" aria-label="Activar o desactivar la música" aria-pressed="false"><span class="control__symbol">♫</span><span id="musicBtnLabel">Música</span></button>
+      <button id="homeBtn" class="control control--secondary" type="button" aria-label="Volver al principio del álbum"><span class="control__symbol">⌂</span><span>Inicio</span></button>
+      <button id="fullscreenBtn" class="control control--secondary" type="button" aria-label="Activar pantalla completa" aria-pressed="false"><span class="control__symbol">⛶</span><span id="fullscreenBtnLabel">Pantalla completa</span></button>
+      <button id="nextBtn" class="control control--turn" type="button" aria-label="Pasar a la página siguiente"><span>Siguiente</span><span class="control__icon">›</span></button>
+    </nav>
+    <div class="reader-tips">Desliza a los lados o toca los bordes del libro para pasar las páginas.</div>
+
+    <footer class="experience__footer"><span>14 años de ti ♡</span><p id="footerDedication">Siempre serás nuestra niña, sin importar cuántos años cumplas.</p></footer>
+  </main>
+
+  <audio id="backgroundMusic" preload="auto" loop playsinline></audio>
+  <div class="visually-hidden" id="announcer" role="status" aria-live="polite"></div>
+</body>
+</html>
